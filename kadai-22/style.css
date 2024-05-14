@@ -1,0 +1,83 @@
+/* h1の要素 */
+h1 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+/* bodyの要素 */
+body {
+    margin: 0;
+}
+/* p, aの要素 */
+p, a {
+    margin: 0;
+    font-size: 20px;
+}
+/* headerの要素 */
+header {   
+    padding: 0px 20px 0px 0px;
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+/* mainの要素 */
+main {
+    padding: 10px;
+}
+/* id:parentの要素 */
+#parent {
+    display: flex;
+    justify-content: space-around;
+}
+/* class:cpntentsの要素 */
+.contents {
+    border: solid 3px rgb(284, 204, 204);
+    flex-basis: 25%;
+    padding: 10px 15px;
+    margin: 20px 0px;
+    text-align: center;
+}
+/* h2の要素 */
+h2 {
+    font-size: 25px;
+    border-bottom: dotted 3px rgb(236, 122, 122);   
+}
+h2::before {
+    content: "●";
+    color: rgb(239, 111, 139);
+}
+/* p2の要素 */
+#parent p:nth-of-type(2)::first-letter {
+    font-weight: bold;
+    color: rgb(97, 206, 249);
+}
+/* 画像の要素 */
+img {
+    margin: 10px 0px;
+    width: 70%;
+}
+/* footerの要素 */
+footer {
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+/* aの要素 */
+a {
+    color: rgb(255, 255, 255);
+}
+a:visited {
+    color: rgb(193, 234, 168);
+}
+a:hover {
+    color: rgb(245, 178, 168);
+}
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 25px;
+    }
+    #parent {
+        flex-direction: column;
+    }
+}
